@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Tasbih</title>
+    <!-- DaisyUi CDN Link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- google font cdn -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- css style -->
+    <style>
+        .font-lato{
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="font-lato">
+    <main>
+        <section class="my-20 mx-auto">
+            <div class="heading ">
+                <h1 class="text-center text-4xl text-cyan-500 font-extrabold"> Digital Tasbih </h1>
+            </div>
+            <div class="tasbih-conainer text-center my-20 mx-28 grid lg:grid-flow-col lg:gap-14 gap-20">
+                <div class="flex flex-col py-20 gap-8 shadow-sm shadow-gray-300" id="tasbi-subhanallah">
+                    <h4 class="text-2xl"> Subhan Allah </h4>
+                    <p id="subhanAllahDisplay" class="text-2xl"> 0 </p>
+                    <div>
+                        <button id="subhanAllahIncriment" class="text-lg text-white font-bold uppercase bg-blue-500 px-5 py-2 mr-5 rounded-lg " id="subhanallah-incriment"> Incriment </button>
+                        <button id="subhanAllahDecriment" class="text-lg text-white font-bold uppercase bg-red-500 px-5 py-2 rounded-lg" id="subhanallah-decriment"> Decriment </button>
+                    </div>
+                </div>
+                <div class="flex flex-col py-20 gap-8 shadow-sm shadow-gray-300" id="tasbi-Alhamdulillah">
+                    <h4 class="text-2xl"> Alhamdulillah </h4>
+                    <p id="AlhamdulillahDisplay"  class="text-2xl"> 0 </p>
+                    <div>
+                        <button id="AlhamdulillahIncriment" class="text-lg text-white font-bold uppercase bg-blue-500 px-5 py-2 mr-5 rounded-lg " id="Alhamdulillah-incriment"> Incriment </button>
+                        <button id="AlhamdulillahDecriment"  class="text-lg text-white font-bold uppercase bg-red-500 px-5 py-2 rounded-lg" id="Alhamdulillah-decriment"> Decriment </button>
+                    </div>
+                </div>
+                <div class="flex flex-col py-20 gap-8 shadow-sm shadow-gray-300" id="tasbi-Alhahu Akber">
+                    <h4 class="text-2xl"> Allahu Akber </h4>
+                    <p id="AllahuAkberDisplay" class="text-2xl"> 0 </p>
+                    <div>
+                        <button id="AllahuAkberIncriment" class="text-lg text-white font-bold uppercase bg-blue-500 px-5 py-2 mr-5 rounded-lg " id="Alhahu Akber-incriment"> Incriment </button>
+                        <button id="AllahuAkberDecriment"  class="text-lg text-white font-bold uppercase bg-red-500 px-5 py-2 rounded-lg" id="Alhahu Akber-decriment"> Decriment </button>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center">
+                <button  class="text-lg text-white font-bold uppercase bg-yellow-500 px-5 py-2 rounded-lg" id="btn-reset">Reset All Tasbih</button>
+            </div>
+        </section>
+    </main>
+    <script src="./style/tasbih.js"></script>
+</body>
+
+</html>
